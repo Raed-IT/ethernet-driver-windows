@@ -1,0 +1,86 @@
+;
+; Copyright (c) 2012, Realtek Corporation
+;
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = NetTrans
+ClassGUID   = {4D36E975-E325-11CE-BFC1-08002BE10318}
+Provider    = %Realtek%
+DriverVer   = 07/03/2012,7.202.0703.2012
+CatalogFile.NT  = RtTeam.cat
+
+[Manufacturer]
+%Realtek%   = RTK_TEAMPT,NTx86
+
+[RTK_TEAMPT.NTx86]
+%RTTEAMPT_Desc% = RTTEAMPT.ndi, RTK_TEAMPT
+
+; Note:
+; 1. The NCF_* flags are defined in netcfgx.h
+; 2. NCF_HAS_UI (0x80) is required for custom property pages.
+;
+
+[RTTEAMPT.ndi]
+AddReg          = RTTEAMPT.ndi.AddReg
+Characteristics = 0x80 ; NCF_HAS_UI
+copyfiles       = RTTEAMPT.CopyFiles.sys
+CopyInf	        = RtTeam620.inf
+
+[SourceDisksNames]
+1=%DiskDescription%,"",,
+
+[SourceDisksFiles]
+RtTeam620.sys     = 1
+
+[DestinationDirs]
+DefaultDestDir      = 12
+RTTEAMPT.CopyFiles.Sys  = 12   ; %windir%\System32\drivers
+
+[RTTEAMPT.CopyFiles.Sys]
+RtTeam620.sys,,,2
+
+
+;-----------------------------------------------------------------------
+;  Install parameters
+;
+
+[RTTEAMPT.ndi.AddReg]
+HKR, Ndi,            ClsID,         0, {ee6cd6fc-a32b-4a26-8a1c-dbc97988ad7a}
+HKR, Ndi,            HelpText,      0,          "%RTTEAMPT_HELP%"
+HKR, Ndi,            Service,       0,          "RTTEAMPT"
+HKR, Ndi\Interfaces, UpperRange,    0,          "noupper"
+HKR, Ndi\Interfaces, LowerRange,    0,          "ndis5"
+
+
+[RTTEAMPT.ndi.Services]
+AddService = RTTEAMPT, , RTTEAMPT.AddService, RTTEAMPT.AddEventLog
+
+[RTTEAMPT.AddService]
+DisplayName     = %RTTEAMPT_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 3 ;SERVICE_DEMAND_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\RtTeam620.sys
+Description     = %RTTEAMPT_Desc%
+
+[RTTEAMPT.AddEventLog]
+AddReg = RTTEAMPT.AddEventLog.AddReg
+
+[RTTEAMPT.AddEventLog.AddReg]
+HKR, , EventMessageFile, 0x20000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x10001, 7
+
+[RTTEAMPT.ndi.Remove.Services]
+DelService = RTTEAMPT
+
+[RTTEAMPT.ndi.Remove]
+DelFiles = RTTEAMPT.CopyFiles.sys
+
+[Strings]
+Realtek = "Realtek"
+RTTEAMPT_Desc = "Realtek Teaming Protocol Driver (NDIS 6.20)"
+RTTEAMPT_HELP = " Realtek Teaming Protocol"
+DiskDescription = "Realtek Teaming Protocol Driver Disk"
+
+

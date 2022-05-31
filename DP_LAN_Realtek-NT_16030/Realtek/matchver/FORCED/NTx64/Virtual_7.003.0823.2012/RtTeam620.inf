@@ -1,0 +1,78 @@
+;
+; Copyright (c) 2012, Realtek Corporation
+;
+
+[Version]
+Signature 	= "$Windows NT$"
+Class 		= Net
+ClassGUID 	= {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider 	= %Realtek%
+DriverVer	= 07/03/2012,7.202.0703.2012
+CatalogFile.NT  = RtTeam.cat
+
+;[ControlFlags]
+;ExcludeFromSelect = RTK_TEAMMP
+
+[Manufacturer]
+%Realtek% = RTK_TEAMMP,NTamd64
+
+[RTK_TEAMMP.NTamd64]
+%TEAM_Desc% = TEAM.ndi, RTK_TEAMMP
+
+[TEAM.ndi]
+AddReg  = TEAM.ndi.AddReg
+Characteristics = 0x81 ;NCF_NOT_USER_REMOVABLE | NCF_VIRTUAL | NCF_HAS_UI
+*IfType         = 6             ; IF_TYPE_ETHERNET_CSMACD 
+*MediaType      = 0             ; NdisMedium802_3 
+*PhysicalMediaType = 0          ; NdisPhysicalMediumUnspecified 
+CopyFiles       = TEAM.CopyFiles
+
+
+[TEAM.ndi.AddReg]
+HKR, Ndi, Service,  0,  TEAM
+HKR, Ndi, HelpText, 0,  "%TEAM_HELP%"
+HKR, Ndi\Interfaces,    UpperRange, 0,  "ndis5"
+HKR, Ndi\Interfaces,    LowerRange, 0,  "nolower"
+
+HKR, Ndi\params\VlanID,     ParamDesc,       0, %VlanID%
+HKR, Ndi\params\VlanID,     default,         0, "0"
+HKR, Ndi\params\VlanID,     type,            0, "long"
+HKR, Ndi\params\VlanID,     min,             0, "0"
+HKR, Ndi\params\VlanID,     max,             0, "4095"
+HKR, Ndi\params\VlanID,     step,            0, "1"
+HKR, Ndi\params\VlanID,     ParamDesc,       0, %VlanID%
+
+[TEAM.CopyFiles]
+RtTeam620.sys,,,2
+
+[TEAM.ndi.Services]
+AddService = TEAM, 2, TEAM.AddService
+
+[TEAM.AddService]
+DisplayName     = %TEAM_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 3 ;SERVICE_DEMAND_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\RtTeam620.sys
+Description     = %TEAM_Desc%
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+RtTeam620.sys  = 1,,
+
+;-----------------------------------------------------------------------------
+; DestinationDirs
+;
+[DestinationDirs]
+TEAM.CopyFiles = 12
+
+
+[Strings]
+Realtek = "Realtek"
+TEAM_Desc = "Realtek Virtual Miniport Driver for Teaming (NDIS 6.20)"
+TEAM_HELP = "Realtek Virtual Miniport Instance for Teaming (NDIS 6.20)"
+VlanID = "VLAN ID"
+DiskId1 = "Realtek Virtual Miniport Device Installation Disk #1"
+

@@ -1,0 +1,450 @@
+16.03.0
+-------
+* Исправления в отдельных драйверах на связке cat<->inf
+
+
+16.02.4
+-------
+* Обновлены все драйверы Realtek PCIe GBE Family Controller до сборки 0219.2016
+
+
+16.02.2
+-------
+* Обновлены все драйверы Realtek USB FE/GbE NIC Family
+* Изменена структура папок для приведения к общему виду
+
+
+16.02.0
+-------
+* Изменен алгоритм упаковки драйвер-пака для уменьшения размера и ускорения распаковки
+
+
+16.01.5
+-------
+* Обновлены все драйверы Realtek USB FE/GbE NIC Family до сборки 1224.2015
+* Обновлены все драйверы Realtek PCIe GBE Family Controller до сборки 0119.2016
+
+
+16.00.0
+-------
+* Изменен алгоритм упаковки драйвер-пака (7-Zip 9.38 -> 15.14)
+
+
+15.12.4
+-------
+* Обновлены все драйверы Realtek PCIe GBE Family Controller и Realtek USB FE/GbE NIC Family
+
+
+15.12.1
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 10.006.1123.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.043.1123.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.097.1123.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.13.1123.2015
+
+
+15.11.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 10.006.1001.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.043.1001.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.097.1001.2015
+* Обновлены драйверы Realtek USB FE/GbE NIC Family 10.5.1019.2015
+* Обновлены драйверы Realtek USB FE/GbE NIC Family 8.28.1019.2015
+* Обновлены драйверы Realtek USB FE/GbE NIC Family 7.21.1019.2015
+
+
+15.11.2
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.040.1021.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.094.1021.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.13.1021.2015
+
+
+15.11.1
+-------
+* Обновлены драйверы Realtek USB GBE Family Controller 10.003.1021.2015
+
+
+15.10.2
+-------
+* Обновлены драйверы Realtek Ndisprot Protocol 8.000.0925.2013
+* Обновлены драйверы Realtek USB GBE Family Controller 10.003.0925.2015
+* Обновлены драйверы Realtek USB GBE Family Controller PCIe 8.040.0925.2015
+* Обновлены драйверы Realtek USB GBE Family Controller PCIe 7.094.0925.2015
+* Обновлены драйверы Realtek USB GBE Family Controller PCIe 106.13.0925.2015
+
+
+15.09.2
+-------
++ Добавлены драйверы Realtek RTL8139 v7.006.0820.2009
+
+
+15.08.4
+-------
+* Обновлены драйверы Realtek USB FE/GbE NIC Family 10.2.0616.2015
+* Обновлены драйверы Realtek USB GBE Family Controller 10.003.0819.2015
+* Обновлены драйверы Realtek USB GBE Family Controller PCIe 8.039.0822.2015
+* Обновлены драйверы Realtek USB GBE Family Controller PCIe 7.092.0823.2015
+* Обновлены драйверы Realtek USB GBE Family Controller PCIe 106.13.0823.2015
+
+
+15.08.3
+-------
+* Обновлены драйверы Realtek USB GBE Family Controller 10.003.0723.2015
+
+
+15.08.2
+-------
+* Обновлены драйверы Realtek USB GBE Family Controller 10.002.0703.2015
+
+
+15.08.0
+-------
+* Изменен алгоритм упаковки драйвер-пака для ускорения работы
+
+
+15.07.3
+-------
+* Обновлены драйверы Realtek USB GBE Family Controller 10.1.0506.2015
+
+
+15.07.1
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 10.001.0528.2015
+
+
+15.06.3
+-------
+* Обновлены драйверы Realtek USB FE/GbE NIC Family NT
+
+
+15.06.2
+-------
++ Добавлены драйверы Realtek USB GBE Family Controller 10.1.0427.2015 для Windows 10
+
+
+15.06.1
+-------
+* Обновлены все драйверы Realtek PCIe GBE Family Controller и Realtek USB GBE Family Controller
+
+
+15.05.4
+-------
++ Добавлены драйверы Realtek PCIe GBE Family Controller 10.001.0505.2015 для Windows 10 x64
+
+
+15.04.5
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.092.04092015
+* Разделение драйвер-пака DP_LAN_Realtek на DP_LAN_Realtek-XP и DP_LAN_Realtek-NT
+
+
+15.04.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.092.0319.2015
+
+
+15.04.3
+-------
+- Удалены драйверы TP-LINK 10/100Mbps PCI Network Adapter из-за пересечения с оригинальными Realtek
+
+
+15.04.2
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.038.0319.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.092.0408.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.13.0408.2015
+
+
+15.03.6
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.13.0115.2015
+
+
+15.03.3
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.038.0115.2015
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.092.0115.2015
+
+
+15.03.2
+-------
+* Обновлены драйверы Realtek USB GBE Family Controller 7.16.0203.2015
+* Обновлены драйверы Realtek USB GBE Family Controller 8.23.0203.2015
+
+
+15.02.1
+-------
+* Обновлены драйверы Realtek USB GBE Family Controller 7.14.1114.2014 x64
+
+
+15.01.5
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.037.1119.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.091.1119.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.12.1119.2014
+
+
+15.00.0
+-------
++ Добавлены драйверы Realtek RTL8129 PCI Fast Ethernet Controller 1.0
+* Обновлены драйверы Realtek PCIe GBE Family Controller 5.830.1204.2014
+* Изменение метода упаковки драйвер-пака
+
+
+14.12.5
+-------
+* Обновлены драйверы Realtek USB GBE NIC Family 8.18.0923.2014
+* Обновлены драйверы Realtek USB GBE NIC Family 7.13.0923.2014
+- Удаление неиспользуемых файлов
+
+
+14.11.5
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.036.0826.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.090.0826.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.10.0716.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 6.4.0812.2014
+
+
+14.11.1
+-------
+* Обновлены драйверы Realtek RTL8139 Fast Ethernet NIC 6.112.0123.2014
+
+
+14.10.5
+-------
+* Обновлены драйверы Realtek USB 10/100 NIC Family 5.8.0812.2014 XP
+
+
+14.09.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.035.0716.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.10.0716.2014
+* Обновлены драйверы Realtek USB GBE NIC Family 8.17.0812.2014
+* Обновлены драйверы Realtek USB GBE NIC Family 7.12.0812.2014
+* Обновлены драйверы Realtek USB GBE NIC Family 5.7.0519.2014
+
+
+14.08.3
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.089.0716.2014
+
+
+14.08.1
+-------
+* Обновлены драйверы Realtek USB GBE NIC Family 8.16.0716.2014
+* Обновлены драйверы Realtek USB GBE NIC Family 7.11.0716.2014
+
+
+14.07.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.034.0617.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.088.0617.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 5.826.0605.2014
+
+
+14.07.3
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.033.0529.2014
+
+
+14.06.4
+-------
+* Обновлены драйверы Realtek USB GBE NIC Family 8.14.0530.2014
+
+
+14.06.2
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.032.0508.2014
+
+
+14.06.0
+-------
+* Изменен алгоритм упаковки драйвер-пака для ускорения работы на слабых компьютерах
+
+
+14.05.5
+-------
++ Добавлены драйверы Realtek USB 10/100 NIC Family 5.7.0106.2014
++ Добавлены драйверы Realtek USB 10/100 NIC Family 6.11.1112.2013
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.031.0423.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 106.4.0317.2014
+* Обновлены драйверы Realtek USB GBE NIC Family 7.9.0519.2014
+
+
+14.05.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.030.0328.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.086.0508.2014
+* Обновлены драйверы Realtek USB GBE NIC Family 8.13.0502.2014
+
+
+14.05.3
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.085.0423.2014
+
+
+14.04.5
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.082.0317.2014
+
+
+14.04.3
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.029.0314.2014
+
+
+14.04.1
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 5.824.0107.2014
+* Используется маркер matchver для подбора драйвера для ОС по номеру версии
+
+
+14.03.6
+-------
+* Обновлены драйверы Realtek USB GBE NIC Family 8.11.0225.2014
+* Обновлены драйверы Realtek USB 10/100 NIC Family 8.13.0106.2014
+
+
+14.03.5
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.026.0218.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.080.0218.2014
+
+
+14.03.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.024.1218.2013
+
+
+14.02.5
+-------
++ Добавлены драйверы Realtek RTL8139 Family PCI Fast Ethernet NIC 5.398.613.2003 XP
+
+
+14.02.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.025.0108.2014
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.079.0108.2014
+* Обновлены драйверы D-Link DUB-E100 USB2.0 Ethernet Adapter 5.4.3.0 XP
+
+
+14.02.2
+-------
+- Удалены нулевые цифровые подписи
+
+
+14.02.0
+-------
+* Изменен алгоритм упаковки драйвер-пака
+
+
+14.01.5
+-------
++ Добавлены драйверы D-Link USB 3.0 to Gigabit Ethernet Adapter 1.16.7.0
+
+
+14.01.4
+-------
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.024.1218.2013
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.078.1218.2013
+* Обновлены драйверы Realtek USB GBE NIC Family 8.10.1009.2013
+* Обновлены драйверы Realtek USB GBE NIC Family 7.7.1128.2013
+
+
+14.00.0
+-------
++ Добавлены драйверы Realtek USB GBE NIC Family Windows Vista 6.3.1104.2013
+* Обновлены драйверы Realtek USB GBE NIC Family Windows XP 5.5.1104.2013
+* Обновлены драйверы Realtek PCIe GBE Family Controller 8.023.1126.2013
+* Обновлены драйверы Realtek PCIe GBE Family Controller 7.077.1126.2013
+* Обновлены драйверы Realtek PCIe GBE Family Controller 6.253.0513.2013
+- Удалены драйверы D-Link DGE-530T Gigabit Ethernet Adapter 6.23.0.0
+
+
+13.11.5
+-------
++ Добавлены драйверы Realtek NDIS Protocol 8.000.0815.2012
++ Добавлены драйверы Realtek USB 10/100/1000 NIC Family 5.1.0325.2013
+* Обновлены драйверы Realtek PCI-E Ethernet 8.020.1122 W8x + 7.076 W7 + 5.820 XP
+
+
+13.11.3
+-------
+* Обновлены драйверы Realtek PCI-E Ethernet 8.020.0927.2013 Win8x
+
+
+13.11.1
+-------
+* Обновлены драйверы Realtek USB 10/100 NIC Family 7.10.0227.2013
+
+
+13.10.4
+-------
+* Обновлены драйверы Realtek USB GBE NIC Family 8.10.1009.2013
+* Обновлены драйверы Realtek 10/100 USB NIC Family 8.11.0808.2013
+* Даунгрейд драйвера Realtek PCI-E Ethernet 8.021.0909.2013 W8/8.1 до 8.020.0815.2013
+
+
+13.10.3
+-------
+* Обновлены драйверы Realtek PCI-E Ethernet 8.021.0909.2013 W8/8.1
+
+
+13.10.2
+-------
+* Обновлены драйверы Realtek PCI-E Ethernet 5.818.0912.2013 XP
+
+
+13.09.4
+-------
+* Обновлены драйверы Realtek PCI-E Ethernet 8.020 W8/8.1 + 7.075 W7
+
+
+13.09.3
+-------
+* Даунгрейд драйвера Realtek PCI-E Ethernet 5.814.0624.2013 XP до 5.810.1218.2012
+
+
+13.08.1
+-------
+* Обновлены драйверы Realtek PCI-E Ethernet 8.019.0726.2013 Win8/8.1
+
+
+13.08.4
+-------
++ Добавлены драйверы TP-Link
+
+
+13.08.2
+-------
++ Добавлены драйверы Silan SC92031 PCI Fast Ethernet Adapter 6.111.0723.2009
+
+
+13.08.1
+-------
+* Обновлены драйверы Realtek PCI-E Ethernet 8.018 W8/8.1 + 7.073 W7 + 5.814 XP
+
+
+13.07.5
+-------
++ Добавлены драйверы Realtek USB GBE Family Controller 8.7.0719.2013
+* Даунгрейд драйвера Realtek PCI-E Ethernet 5.812.0515.2013 XP до 5.810.1218.2012
+
+
+13.07.1
+-------
++ Добавлены драйверы Realtek USB GBE NIC Family 8.6.0626.2013
++ Добавлены драйверы Realtek USB 10/100 NIC Family 8.10.0627.2013
+* Обновлены драйверы Realtek PCI-E Ethernet 8.016.0614.2013 Win8
+
+
+13.06.5
+-------
+* Первая версия пакета
+
+
+
+PCI\VEN_10EC&DEV_8129 - дров для XP нет
+PCI\VEN_10EC&DEV_0139 - дров вообще нет

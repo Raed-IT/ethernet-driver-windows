@@ -1,0 +1,86 @@
+;
+; Copyright (c) 2012, Realtek Corporation
+;
+
+[Version]
+Signature 	= "$Windows NT$"
+Class 		= Net
+ClassGUID 	= {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider 	= %Realtek%
+DriverVer	= 08/23/2012,7.003.0823.2012
+CatalogFile.NT  = RtVlan620.cat
+
+;[ControlFlags]
+;ExcludeFromSelect = RTK_VLANMP
+
+[Manufacturer]
+%Realtek% = RTK_VLANMP,NTamd64
+
+[RTK_VLANMP.NTamd64]
+%VLAN_Desc% = VLAN.ndi, RTK_VLANMP
+
+[VLAN.ndi]
+AddReg  = VLAN.ndi.AddReg
+Characteristics = 0x81 ;NCF_NOT_USER_REMOVABLE | NCF_VIRTUAL | NCF_HAS_UI
+*IfType         = 6             ; IF_TYPE_ETHERNET_CSMACD 
+*MediaType      = 0             ; NdisMedium802_3 
+*PhysicalMediaType = 0          ; NdisPhysicalMediumUnspecified 
+CopyFiles       = VLAN.CopyFiles
+
+
+[VLAN.ndi.AddReg]
+HKR, Ndi, Service,  0,  VLAN
+HKR, Ndi, HelpText, 0,  "%VLAN_HELP%"
+HKR, Ndi\Interfaces,    UpperRange, 0,  "ndis5"
+HKR, Ndi\Interfaces,    LowerRange, 0,  "nolower"
+
+HKR, Ndi\params\VlanID,     ParamDesc,       0, %VlanID%
+HKR, Ndi\params\VlanID,     default,         0, "0"
+HKR, Ndi\params\VlanID,     type,            0, "long"
+HKR, Ndi\params\VlanID,     min,             0, "0"
+HKR, Ndi\params\VlanID,     max,             0, "4095"
+HKR, Ndi\params\VlanID,     step,            0, "1"
+HKR, Ndi\params\VlanID,     ParamDesc,       0, %VlanID%
+
+[NetworkAddress.reg]
+HKR,Ndi\params\NetworkAddress,	   ParamDesc,  0, %NetworkAddress%
+HKR,Ndi\params\NetworkAddress,	   type,       0, "edit"
+HKR,Ndi\params\NetworkAddress,	   default,    0, "000000000000"
+HKR,Ndi\params\NetworkAddress,	   LimitText,  0, "12"
+HKR,Ndi\params\NetworkAddress,	   UpperCase,  0, "1"
+HKR,Ndi\params\NetworkAddress,	   Optional,   0, "1"
+
+[VLAN.CopyFiles]
+RtVlan620.sys,,,2
+
+[VLAN.ndi.Services]
+AddService = VLAN, 2, VLAN.AddService
+
+[VLAN.AddService]
+DisplayName     = %VLAN_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 3 ;SERVICE_DEMAND_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\RtVLAN620.sys
+Description     = %VLAN_Desc%
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+RtVLAN620.sys  = 1,,
+
+;-----------------------------------------------------------------------------
+; DestinationDirs
+;
+[DestinationDirs]
+VLAN.CopyFiles = 12
+
+
+[Strings]
+Realtek = "Realtek"
+VLAN_Desc = "Realtek Virtual Adapter"
+VLAN_HELP = "Realtek Virtual Miniport Instance for VLAN (NDIS 6.2)"
+VlanID = "VLAN ID"
+DiskId1 = "Realtek Virtual Miniport Device Installation Disk #1"
+
